@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
+import { FormComponent } from "@common/components/appointments/form/form.component";
+import { ListComponent } from './@common/components/appointments/list/list.component';
+
 @Component({
-  selector: 'app-root',
+  selector: 'presh-appointments-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styles: [``],
+  imports: [CommonModule, RouterOutlet, FormComponent, ListComponent]
 })
 export class AppComponent {
   title = 'presh-appointments';
